@@ -170,15 +170,4 @@ ORDER BY avg_order_value DESC;
 
 That's a 32% gap between cities — big enough to be worth testing something regional, like a delivery promo or a targeted offer aimed at increasing average order value in the lower-performing cities.
 
----
 
-## Files in this repo
-
-- `generate_data.py` — how I built the dataset (Python + SQLite)
-- `shop_postgres.sql` — full schema and data, ready to import into PostgreSQL
-- `queries.sql` — all 7 queries with comments
-- `README.md` — this file
-
-## What I'd do next
-
-If I kept going with this, I'd want to build a proper cohort retention analysis (do customers who sign up in summer behave differently than winter sign-ups?), try a simple churn prediction model, and turn some of this into a Power BI dashboard so it's easier to hand to a non-technical stakeholder.
